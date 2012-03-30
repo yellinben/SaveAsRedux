@@ -11,6 +11,8 @@
 @interface SaveAsRedux (Private)
 - (void)installMenuItem;
 - (IBAction)performSaveAs:(id)sender;
+- (NSDocument *)activeDocument;
+- (BOOL)hasActiveDocument;
 @end
 
 @implementation SaveAsRedux
@@ -25,22 +27,44 @@ static SaveAsRedux *instance = nil;
 - (void)installMenuItem {
     NSMenu *fileMenu = [[[NSApp mainMenu] itemWithTitle:@"File"] submenu];
     
-    // check for existing Save As item
+    // make sure to check for existing Save As item
     if ([fileMenu indexOfItemWithTitle:@"Save As…"] == -1) {
         NSInteger saveItemIndex = [fileMenu indexOfItemWithTitle:@"Save"];
-        [fileMenu insertItemWithTitle:@"Save As…" 
-                               action:@selector(performSaveAs:) 
-                        keyEquivalent:@"" 
-                              atIndex:saveItemIndex+1];
+        
+        NSMenuItem *saveAsItem = [[[NSMenuItem alloc] init] autorelease];
+        [saveAsItem setRepresentedObject:self];
+        [saveAsItem setTarget:self];
+        [saveAsItem setTitle:@"Save As…"];
+        [saveAsItem setAction:@selector(performSaveAs:)];        
+        [saveAsItem setKeyEquivalent:@"s"];
+        [saveAsItem setKeyEquivalentModifierMask:NSCommandKeyMask | NSShiftKeyMask];
+
+        [fileMenu insertItem:saveAsItem atIndex:saveItemIndex+1];
     }          
 }
 
-- (IBAction)performSaveAs:(id)sender {
-    NSArray *docs = [NSApp orderedDocuments];
-    if (docs != nil && docs.count > 0) {
-        NSDocument *currentDocument = [docs objectAtIndex:0];
-        [currentDocument saveDocumentAs:nil];
+- (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
+    if ([menuItem action] == @selector(performSaveAs:)) {
+        return [self hasActiveDocument];
     }
+    return YES;
+}
+
+- (IBAction)performSaveAs:(id)sender {
+    if ([self hasActiveDocument])
+        [[self activeDocument] saveDocumentAs:nil];
+}
+        
+- (NSDocument *)activeDocument {
+    NSArray *docs = [NSApp orderedDocuments];
+    if (docs == nil || docs.count == 0)
+        return nil;
+    
+    return [docs objectAtIndex:0];
+}
+        
+- (BOOL)hasActiveDocument {
+    return [self activeDocument] != nil;
 }
 
 + (void)load {
