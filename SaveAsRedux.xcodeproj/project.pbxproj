@@ -17,9 +17,9 @@
 		3685E80815256324005569E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3685E80915256324005569E2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3685E80A15256324005569E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3685E80D15256324005569E2 /* SaveAsRedux-Info.plist */ = {isa = PBXFileReference; path = "SaveAsRedux-Info.plist"; sourceTree = "<group>"; };
+		3685E80D15256324005569E2 /* SaveAsRedux-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SaveAsRedux-Info.plist"; sourceTree = "<group>"; };
 		3685E80F15256324005569E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3685E81115256324005569E2 /* SaveAsRedux-Prefix.pch */ = {isa = PBXFileReference; path = "SaveAsRedux-Prefix.pch"; sourceTree = "<group>"; };
+		3685E81115256324005569E2 /* SaveAsRedux-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaveAsRedux-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
