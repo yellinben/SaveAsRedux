@@ -16,6 +16,10 @@ Currently SaveAsRedux loads in all applications, but only installs the "Save Asâ
 
 Check out this SIMBL [tutorial](http://code.google.com/p/simbl/wiki/Tutorial) for more info.
 
+## Issues
+
+Currently there's an issue in some apps with menu validation and updating, causing the "Save Asâ€¦" item to be hidden. I'm currently working on this. In the mean time, SaveAsRedux only seems to work in Preview, ugh.
+
 ## License
 
 This project is licensed under the MIT License.
