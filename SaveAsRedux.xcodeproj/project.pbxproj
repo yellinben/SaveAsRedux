@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3685E80615256324005569E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3685E80515256323005569E2 /* Cocoa.framework */; };
+		3685E81015256324005569E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3685E80E15256324005569E2 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3685E80215256323005569E2 /* SaveAsRedux.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveAsRedux.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3685E80515256323005569E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3685E80815256324005569E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3685E80915256324005569E2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3685E80A15256324005569E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3685E80D15256324005569E2 /* SaveAsRedux-Info.plist */ = {isa = PBXFileReference; path = "SaveAsRedux-Info.plist"; sourceTree = "<group>"; };
+		3685E80F15256324005569E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3685E81115256324005569E2 /* SaveAsRedux-Prefix.pch */ = {isa = PBXFileReference; path = "SaveAsRedux-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3685E7FF15256323005569E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3685E80615256324005569E2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3685E7F715256323005569E2 = {
+			isa = PBXGroup;
+			children = (
+				3685E80B15256324005569E2 /* SaveAsRedux */,
+				3685E80415256323005569E2 /* Frameworks */,
+				3685E80315256323005569E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3685E80315256323005569E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3685E80215256323005569E2 /* SaveAsRedux.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3685E80415256323005569E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3685E80515256323005569E2 /* Cocoa.framework */,
+				3685E80715256324005569E2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3685E80715256324005569E2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3685E80815256324005569E2 /* AppKit.framework */,
+				3685E80915256324005569E2 /* CoreData.framework */,
+				3685E80A15256324005569E2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3685E80B15256324005569E2 /* SaveAsRedux */ = {
+			isa = PBXGroup;
+			children = (
+				3685E80C15256324005569E2 /* Supporting Files */,
+			);
+			path = SaveAsRedux;
+			sourceTree = "<group>";
+		};
+		3685E80C15256324005569E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3685E80D15256324005569E2 /* SaveAsRedux-Info.plist */,
+				3685E80E15256324005569E2 /* InfoPlist.strings */,
+				3685E81115256324005569E2 /* SaveAsRedux-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3685E80115256323005569E2 /* SaveAsRedux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3685E81415256324005569E2 /* Build configuration list for PBXNativeTarget "SaveAsRedux" */;
+			buildPhases = (
+				3685E7FE15256323005569E2 /* Sources */,
+				3685E7FF15256323005569E2 /* Frameworks */,
+				3685E80015256323005569E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaveAsRedux;
+			productName = SaveAsRedux;
+			productReference = 3685E80215256323005569E2 /* SaveAsRedux.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3685E7F915256323005569E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3685E7FC15256323005569E2 /* Build configuration list for PBXProject "SaveAsRedux" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3685E7F715256323005569E2;
+			productRefGroup = 3685E80315256323005569E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3685E80115256323005569E2 /* SaveAsRedux */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3685E80015256323005569E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3685E81015256324005569E2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3685E7FE15256323005569E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3685E80E15256324005569E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3685E80F15256324005569E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3685E81215256324005569E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3685E81315256324005569E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3685E81515256324005569E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SaveAsRedux/SaveAsRedux-Prefix.pch";
+				INFOPLIST_FILE = "SaveAsRedux/SaveAsRedux-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3685E81615256324005569E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SaveAsRedux/SaveAsRedux-Prefix.pch";
+				INFOPLIST_FILE = "SaveAsRedux/SaveAsRedux-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3685E7FC15256323005569E2 /* Build configuration list for PBXProject "SaveAsRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3685E81215256324005569E2 /* Debug */,
+				3685E81315256324005569E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3685E81415256324005569E2 /* Build configuration list for PBXNativeTarget "SaveAsRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3685E81515256324005569E2 /* Debug */,
+				3685E81615256324005569E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3685E7F915256323005569E2 /* Project object */;
+}
