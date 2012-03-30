@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3685E80615256324005569E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3685E80515256323005569E2 /* Cocoa.framework */; };
 		3685E81015256324005569E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3685E80E15256324005569E2 /* InfoPlist.strings */; };
+		3685E81915256349005569E2 /* SaveAsRedux.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685E81815256349005569E2 /* SaveAsRedux.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		3685E80D15256324005569E2 /* SaveAsRedux-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SaveAsRedux-Info.plist"; sourceTree = "<group>"; };
 		3685E80F15256324005569E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3685E81115256324005569E2 /* SaveAsRedux-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaveAsRedux-Prefix.pch"; sourceTree = "<group>"; };
+		3685E81715256349005569E2 /* SaveAsRedux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAsRedux.h; sourceTree = "<group>"; };
+		3685E81815256349005569E2 /* SaveAsRedux.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAsRedux.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				3685E80C15256324005569E2 /* Supporting Files */,
+				3685E81715256349005569E2 /* SaveAsRedux.h */,
+				3685E81815256349005569E2 /* SaveAsRedux.m */,
 			);
 			path = SaveAsRedux;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3685E81915256349005569E2 /* SaveAsRedux.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
